@@ -2,3 +2,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.spaced-y-6 > * {
+    margin-bottom: 1rem;
+}
+
+.text-black-gradient {
+    @apply font-bold text-transparent bg-clip-text bg-gradient-to-br from-gray-700 to-gray-900
+}
