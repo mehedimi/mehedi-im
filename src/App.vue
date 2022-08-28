@@ -16,7 +16,7 @@ import Project from "./components/Project.vue";
   <section class="mt-10">
     <div class="px-4 mx-auto prose prose-amber">
       <h2>Who am I?</h2>
-      <p>Asslamualikum everyone!</p>
+      <p>As-salamualikum everyone!</p>
       <p>
         I'm
         <a target="_blank" href="https://github.com/mehedimi" title="@mehedimi"
