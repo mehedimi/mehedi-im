@@ -39,7 +39,7 @@ import Project from "./components/Project.vue";
         >
         too. Currently, I am working in a software company named
         <a href="https://wedevs.com" target="_blank">weDevs</a>
-        as a Software Engineer.
+        as a Senior Software Engineer.
       </p>
 
       <h2>What I have made?</h2>
