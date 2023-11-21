@@ -48,6 +48,27 @@ import Project from "./components/Project.vue";
 
       <Project>
         <template #title>
+          <a href="https://countdownbuilder.com">Countdown Builder</a>
+        </template>
+        <p>
+          Supercharge your email campaigns with our dynamic countdowns. Our
+          email countdown builder is the key to crafting visually stunning,
+          time-sensitive emails that boost conversions. Perfect for product
+          launches, sales promotions, or event invitations, our tool
+          effortlessly captivates your audience.
+        </p>
+        <img
+          src="https://countdownbuilder.com/wp-content/uploads/2023/11/countdown.gif"
+          alt="Countdown Builder"
+        />
+        Let's create the own
+        <a href="https://app.countdownbuilder.com/countdowns">
+          email countdown timer</a
+        >
+      </Project>
+
+      <Project>
+        <template #title>
           <a href="https://github.com/mehedimi/wp-query-builder"
             >WP Query Builder</a
           >
