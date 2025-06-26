@@ -5,7 +5,7 @@ import Project from "./components/Project.vue";
 <template>
   <header class="text-center py-5">
     <img
-      src="../images/mehedi-hasan.png"
+      src="../images/mehedimi.jpg"
       class="inline-block w-20 rounded-full bg-gray-100"
       alt="Mehedi Hasan"
     />
