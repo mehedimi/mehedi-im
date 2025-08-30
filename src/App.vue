@@ -1,5 +1,17 @@
 <script setup>
 import Project from "./components/Project.vue";
+import { useHead } from "@unhead/vue";
+
+useHead({
+  title: "Mehedi Hasan | Full-Stack Developer & SaaS Innovator",
+  meta: [
+    {
+      name: "description",
+      content:
+        "Discover Mehedi Hasan, a full-stack developer specializing in Laravel, Node.js, Vue.js, and scalable SaaS solutions like Countdown Builder. Explore my projects and expertise at mehedi.im.",
+    },
+  ],
+});
 </script>
 
 <template>
@@ -20,7 +32,7 @@ import Project from "./components/Project.vue";
       <p>
         I'm
         <a target="_blank" href="https://github.com/mehedimi" title="@mehedimi"
-          >Muhammad Mehedi Hasan</a
+          >Mehedi Hasan</a
         >, a Full stack developer,
         <a href="https://en.wikipedia.org/wiki/Open_source" target="_blank"
           >Open source contributor</a
@@ -37,9 +49,8 @@ import Project from "./components/Project.vue";
             >JavaScript</a
           ></em
         >
-        too. Currently, I am working in a software company named
-        <a href="https://wedevs.com" target="_blank">weDevs</a>
-        as a Senior Software Engineer.
+        too. Currently, building a new project called
+        <a href="https://countdownbuilder.com">Countdown Builder</a>.
       </p>
 
       <h2>What I have made?</h2>
@@ -58,7 +69,7 @@ import Project from "./components/Project.vue";
           effortlessly captivates your audience.
         </p>
         <img
-          src="https://countdownbuilder.com/wp-content/uploads/2023/11/countdown.gif"
+          src="https://countdownbuilder.com/wp-content/uploads/2025/08/pulsing-animation-countdown-timer.gif"
           alt="Countdown Builder"
         />
         Let's create the own
