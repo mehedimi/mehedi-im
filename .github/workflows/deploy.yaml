@@ -14,8 +14,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '22' # Specify the Node.js version you need
-          cache: 'pnpm' # Enable caching for pnpm to speed up installs
-
+        
       - name: Install pnpm
         run: npm install -g pnpm
 
