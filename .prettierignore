@@ -1,3 +1,6 @@
 # Ignore artifacts:
 build
 coverage
+.nuxt
+.output
+pnpm-lock.yaml
