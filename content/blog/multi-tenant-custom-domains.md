@@ -1,6 +1,6 @@
 ---
-title: Setting Up Multi-Tenant Custom Domains (Without Paying for Cloudflare for SaaS)
-description: How Countdown Builder serves customer domains with their own TLS certs — Nginx stream SNI routing, Caddy on-demand TLS, unix sockets, and PROXY protocol, without paying for Cloudflare for SaaS.
+title: Setting Up Multi-Tenant Custom Domains
+description: How Countdown Builder serves customer domains with their own TLS certs — Nginx stream SNI routing, Caddy on-demand TLS, unix sockets, and PROXY protocol.
 date: 2026-10-23
 tags:
   - Nginx
@@ -10,11 +10,11 @@ tags:
 image: /images/blog/banner-custom-domains-light.png
 ---
 
-![Multi-Tenant Custom Domains, without paying for Cloudflare for SaaS](/images/blog/banner-custom-domains-light.png)
+![Multi-Tenant Custom Domains](/images/blog/banner-custom-domains-light.png)
 
 I run [CountdownBuilder](https://countdownbuilder.com), a SaaS that serves live countdown timer images for emails. Customers wanted `timer.theirbrand.com` instead of our domain, which meant issuing and renewing TLS certs for domains I don't know in advance.
 
-Cloudflare for SaaS solves this, but it bills per hostname, and that adds up when every customer brings their own domain. So I built it on a single server with Nginx and Caddy. This is the loop I went through: what I tried, what broke, and what the final setup looks like.
+Cloudflare for SaaS solves this, but I wanted to keep it on the single server I already run. So I built it with Nginx and Caddy. This is the loop I went through: what I tried, what broke, and what the final setup looks like.
 
 ## The final architecture
 
