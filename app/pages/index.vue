@@ -79,6 +79,53 @@ const more = [
   },
 ];
 
+const experience = [
+  {
+    role: "Founder",
+    company: "Countdown Builder",
+    dates: "Sep 2025 – Present",
+  },
+  {
+    role: "Senior Software Engineer",
+    company: "weDevs",
+    dates: "Jan 2023 – Aug 2025",
+  },
+];
+
+const earlierExperience = [
+  {
+    role: "Software Engineer",
+    company: "weDevs",
+    dates: "Jul 2020 – Dec 2022",
+  },
+  {
+    role: "Junior Software Engineer",
+    company: "weDevs",
+    dates: "Jun 2019 – Jun 2020",
+  },
+  {
+    role: "Laravel Developer",
+    company: "Smart Software Ltd.",
+    dates: "Nov 2018 – May 2019",
+  },
+  {
+    role: "Laravel Developer",
+    company: "Terrestrial IT Ltd",
+    dates: "Dec 2017 – Jun 2018",
+  },
+  {
+    role: "Laravel Developer",
+    company: "bti- Building Technology & Ideas Ltd.",
+    dates: "Jan 2017 – Jun 2017",
+    note: "Internship",
+  },
+  {
+    role: "Web Developer",
+    company: "Cloud Technology",
+    dates: "Jun 2016 – Nov 2016",
+  },
+];
+
 const stack = [
   "Laravel",
   "Vue.js",
@@ -159,6 +206,41 @@ const stack = [
           {{ item }}
         </span>
       </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="mt-[72px]">
+      <h2
+        class="mb-5 text-[0.8rem] font-semibold tracking-[0.1em] text-muted uppercase"
+      >
+        Experience
+      </h2>
+      <div class="border-b border-line">
+        <ExperienceItem
+          v-for="job in experience"
+          :key="job.role + job.company"
+          :role="job.role"
+          :company="job.company"
+          :dates="job.dates"
+        />
+      </div>
+      <details class="mt-7">
+        <summary
+          class="cursor-pointer text-[0.95rem] text-muted hover:text-text"
+        >
+          Earlier experience ({{ earlierExperience.length }})
+        </summary>
+        <div class="mt-3.5 border-b border-line">
+          <ExperienceItem
+            v-for="job in earlierExperience"
+            :key="job.role + job.company"
+            :role="job.role"
+            :company="job.company"
+            :dates="job.dates"
+            :note="job.note"
+          />
+        </div>
+      </details>
     </section>
 
     <!-- Projects -->
