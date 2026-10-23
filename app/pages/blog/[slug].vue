@@ -64,7 +64,7 @@ useHead({
     </NuxtLink>
 
     <h1
-      class="mb-2.5 font-serif text-[clamp(1.9rem,5.5vw,2.5rem)] leading-tight tracking-tight"
+      class="mb-2.5 text-[clamp(1.9rem,5.5vw,2.5rem)] leading-tight tracking-tight"
     >
       {{ post.title }}
     </h1>

@@ -138,11 +138,17 @@ const stack = [
       </p>
       <p class="mb-3.5 text-[1.05rem]">
         Right now I'm building
-        <a href="https://countdownbuilder.com" class="text-accent"
+        <a
+          href="https://countdownbuilder.com"
+          class="text-accent underline underline-offset-[3px]"
           >Countdown Builder</a
         >
         and
-        <a href="https://ogdynamic.com" class="text-accent">OG Dynamic</a>.
+        <a
+          href="https://ogdynamic.com"
+          class="text-accent underline underline-offset-[3px]"
+          >OG Dynamic</a
+        >.
       </p>
       <div class="mt-4 flex flex-wrap gap-2">
         <span
@@ -214,35 +220,37 @@ const stack = [
         these.
       </p>
       <div class="flex flex-wrap gap-[18px]">
-        <a href="mailto:me@mehedi.im" class="text-accent hover:underline"
+        <a
+          href="mailto:me@mehedi.im"
+          class="text-accent underline underline-offset-[3px]"
           >me@mehedi.im</a
         >
         <a
           href="https://github.com/mehedimi"
           target="_blank"
           rel="noopener"
-          class="text-accent hover:underline"
+          class="text-accent underline underline-offset-[3px]"
           >GitHub</a
         >
         <a
           href="https://www.linkedin.com/in/mehedimi/"
           target="_blank"
           rel="noopener"
-          class="text-accent hover:underline"
+          class="text-accent underline underline-offset-[3px]"
           >LinkedIn</a
         >
         <a
           href="https://twitter.com/mehedimi"
           target="_blank"
           rel="noopener"
-          class="text-accent hover:underline"
+          class="text-accent underline underline-offset-[3px]"
           >Twitter</a
         >
         <a
           href="https://www.fiverr.com/mehedi_mi"
           target="_blank"
           rel="noopener"
-          class="text-accent hover:underline"
+          class="text-accent underline underline-offset-[3px]"
           >Hire me on Fiverr</a
         >
       </div>

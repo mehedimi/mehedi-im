@@ -1,25 +1,25 @@
 @import "tailwindcss";
 
-/* Design tokens — warm paper palette, flips via [data-theme] */
+/* Design tokens — black & white, flips via [data-theme] */
 :root {
-  --bg: #fbfaf7;
-  --surface: #f3f1ea;
-  --text: #1d1d1b;
-  --muted: #6b6a64;
-  --line: #e4e1d8;
-  --accent: #b4491f;
-  --code: #f0ede4;
+  --bg: #ffffff;
+  --surface: #f5f5f5;
+  --text: #111111;
+  --muted: #666666;
+  --line: #e7e7e7;
+  --accent: #111111;
+  --code: #f5f5f5;
   color-scheme: light;
 }
 
 [data-theme="dark"] {
-  --bg: #161615;
-  --surface: #1e1e1c;
-  --text: #e8e6df;
-  --muted: #9a978d;
-  --line: #2d2d2a;
-  --accent: #e38a5f;
-  --code: #222220;
+  --bg: #000000;
+  --surface: #141414;
+  --text: #f5f5f5;
+  --muted: #a3a3a3;
+  --line: #242424;
+  --accent: #f5f5f5;
+  --code: #141414;
   color-scheme: dark;
 }
 
@@ -36,9 +36,8 @@
 
 @theme {
   --font-sans:
-    ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
+    "Figtree", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif;
-  --font-serif: Charter, "Iowan Old Style", "Palatino Linotype", Georgia, serif;
   --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
 }
 
@@ -64,9 +63,8 @@
 
 /* Long-form reading view (markdown body) */
 .prose {
-  font-family: var(--font-serif);
-  font-size: 1.2rem;
-  line-height: 1.78;
+  font-size: 1.125rem;
+  line-height: 1.75;
 }
 
 .prose > :first-child {
@@ -78,7 +76,6 @@
 }
 
 .prose h2 {
-  font-family: var(--font-sans);
   font-size: 1.45rem;
   font-weight: 650;
   letter-spacing: -0.01em;
@@ -86,14 +83,12 @@
 }
 
 .prose h3 {
-  font-family: var(--font-sans);
   font-size: 1.2rem;
   font-weight: 600;
   margin: 1.8em 0 0.6em;
 }
 
 .prose h4 {
-  font-family: var(--font-sans);
   font-size: 1.05rem;
   font-weight: 600;
   margin: 1.6em 0 0.5em;
@@ -101,6 +96,8 @@
 
 .prose a {
   color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .prose blockquote {
@@ -175,13 +172,11 @@
 }
 
 .prose th {
-  font-family: var(--font-sans);
   font-size: 0.85rem;
 }
 
 /* Callout box */
 .note {
-  font-family: var(--font-sans);
   font-size: 0.85rem;
   background: var(--surface);
   color: var(--muted);

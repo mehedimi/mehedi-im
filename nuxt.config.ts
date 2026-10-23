@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   compatibilityDate: "2026-10-21",
   devtools: { enabled: false },
 
-  modules: ["@nuxt/content", "@nuxtjs/seo"],
+  modules: ["@nuxt/content", "@nuxt/fonts", "@nuxtjs/seo"],
 
   css: ["~/assets/css/main.css"],
 
@@ -35,7 +35,26 @@ export default defineNuxtConfig({
   app: {
     head: {
       htmlAttrs: { lang: "en" },
-      link: [{ rel: "icon", type: "image/svg+xml", href: "/favicon.svg" }],
+      link: [
+        {
+          rel: "icon",
+          type: "image/png",
+          sizes: "32x32",
+          href: "/favicon-32x32.png",
+        },
+        {
+          rel: "icon",
+          type: "image/png",
+          sizes: "16x16",
+          href: "/favicon-16x16.png",
+        },
+        { rel: "shortcut icon", href: "/favicon.ico" },
+        {
+          rel: "apple-touch-icon",
+          sizes: "180x180",
+          href: "/apple-touch-icon.png",
+        },
+      ],
       script: [
         {
           // Set the theme before first paint — no flash
@@ -69,6 +88,13 @@ export default defineNuxtConfig({
           ],
         },
       },
+    },
+  },
+
+  fonts: {
+    defaults: {
+      // Figtree arrives subsetted from Google, which skips preload by default
+      preload: true,
     },
   },
 
