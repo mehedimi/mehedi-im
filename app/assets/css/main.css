@@ -64,6 +64,7 @@
 
 /* Long-form reading view (markdown body) */
 .prose {
+  font-family: "Lora", Georgia, "Times New Roman", serif;
   font-size: 1.125rem;
   line-height: 1.75;
 }
@@ -74,6 +75,12 @@
 
 .prose p {
   margin: 0 0 1.4em;
+}
+
+/* Headings and tables stay sans against the serif body */
+.prose :is(h2, h3, h4),
+.prose table {
+  font-family: var(--font-sans);
 }
 
 .prose h2 {
