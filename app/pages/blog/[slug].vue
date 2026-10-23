@@ -54,7 +54,7 @@ useHead({
 <template>
   <article
     v-if="post"
-    class="mx-auto max-w-[680px] px-[22px] pt-14 pb-16 md:pb-24"
+    class="mx-auto max-w-[720px] px-[22px] pt-14 pb-16 md:pb-24"
   >
     <NuxtLink
       to="/blog"
@@ -64,7 +64,7 @@ useHead({
     </NuxtLink>
 
     <h1
-      class="mb-2.5 text-[clamp(1.9rem,5.5vw,2.5rem)] leading-tight font-bold tracking-tight"
+      class="mb-2.5 text-[clamp(2rem,5.5vw,2.8rem)] leading-tight font-bold tracking-tight text-balance"
     >
       {{ post.title }}
     </h1>
