@@ -104,6 +104,22 @@ Have a project in mind or just want to say hello? Reach out on any of these.
 
 ---
 
+- **Page:** Blog — Mehedi Hasan
+- **Source:** https://mehedi.im/blog
+- **Description:** Notes on building software and SaaS products — Laravel, Rust, Vue.js, and the lessons learned shipping products.
+
+# **Blog **
+
+Notes on building software and SaaS products.
+
+[Oct 23, 2026<h3>**Multi-Tenant Custom Domains, without paying for Cloudflare for SaaS**</h3>How Countdown Builder serves customer domains with their own TLS certs — Nginx stream SNI routing and Caddy on-demand TLS on a single server. · 5 min read](https://mehedi.im/blog/multi-tenant-custom-domains)
+
+```json
+{"@context":"https://schema.org","@graph":[{"@id":"https://mehedi.im/#website","@type":"WebSite","description":"Mehedi Hasan is a full-stack developer building SaaS products with Laravel, Rust, Node.js and Vue.js.","name":"Mehedi Hasan","url":"https://mehedi.im/","publisher":{"@id":"https://mehedi.im/#identity"}},{"@id":"https://mehedi.im/blog#webpage","@type":"WebPage","description":"Notes on building software and SaaS products — Laravel, Rust, Vue.js, and the lessons learned shipping products.","name":"Blog","url":"https://mehedi.im/blog","isPartOf":{"@id":"https://mehedi.im/#website"},"potentialAction":[{"@type":"ReadAction","target":["https://mehedi.im/blog"]}]},{"@id":"https://mehedi.im/#identity","@type":"Person","name":"Mehedi Hasan","url":"https://mehedi.im","sameAs":["https://github.com/mehedimi","https://twitter.com/mehedimi","https://www.linkedin.com/in/mehedimi/"]}]}
+```
+
+---
+
 - **Page:** Multi-Tenant Custom Domains, without paying for Cloudflare for SaaS
 - **Source:** https://mehedi.im/blog/multi-tenant-custom-domains
 - **Description:** How Countdown Builder serves customer domains with their own TLS certs — Nginx stream SNI routing and Caddy on-demand TLS on a single server.
@@ -234,20 +250,4 @@ You want `obtaining new certificate` followed by `certificate obtained successfu
 1. Prototype with Let's Encrypt **staging** to avoid rate limits while debugging.
 2. Test with `curl --resolve` before touching real DNS.
 3. Add a per-domain issuance cap in your `ask` endpoint.
-
----
-
-- **Page:** Blog — Mehedi Hasan
-- **Source:** https://mehedi.im/blog
-- **Description:** Notes on building software and SaaS products — Laravel, Rust, Vue.js, and the lessons learned shipping products.
-
-# **Blog **
-
-Notes on building software and SaaS products.
-
-[Oct 23, 2026<h3>**Multi-Tenant Custom Domains, without paying for Cloudflare for SaaS**</h3>How Countdown Builder serves customer domains with their own TLS certs — Nginx stream SNI routing and Caddy on-demand TLS on a single server. · 5 min read](https://mehedi.im/blog/multi-tenant-custom-domains)
-
-```json
-{"@context":"https://schema.org","@graph":[{"@id":"https://mehedi.im/#website","@type":"WebSite","description":"Mehedi Hasan is a full-stack developer building SaaS products with Laravel, Rust, Node.js and Vue.js.","name":"Mehedi Hasan","url":"https://mehedi.im/","publisher":{"@id":"https://mehedi.im/#identity"}},{"@id":"https://mehedi.im/blog#webpage","@type":"WebPage","description":"Notes on building software and SaaS products — Laravel, Rust, Vue.js, and the lessons learned shipping products.","name":"Blog","url":"https://mehedi.im/blog","isPartOf":{"@id":"https://mehedi.im/#website"},"potentialAction":[{"@type":"ReadAction","target":["https://mehedi.im/blog"]}]},{"@id":"https://mehedi.im/#identity","@type":"Person","name":"Mehedi Hasan","url":"https://mehedi.im","sameAs":["https://github.com/mehedimi","https://twitter.com/mehedimi","https://www.linkedin.com/in/mehedimi/"]}]}
-```
 
