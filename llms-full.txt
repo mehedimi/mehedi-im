@@ -1,0 +1,253 @@
+# Mehedi Hasan
+
+> Mehedi Hasan is a full-stack developer building SaaS products with Laravel, Rust, Node.js and Vue.js.
+
+Canonical Origin: https://mehedi.im/
+
+## LLM Resources
+
+- [Full Content](https://mehedi.im/llms-full.txt): Complete page content in markdown format.
+
+---
+
+- **Page:** Mehedi Hasan — Full-Stack Developer &amp; SaaS Builder
+- **Source:** https://mehedi.im/
+- **Description:** Mehedi Hasan is a full-stack developer building SaaS products with Laravel, Rust, Node.js and Vue.js.
+
+![Portrait of Mehedi Hasan](https://mehedi.im/images/mehedi.jpg)
+
+# **Hi, I'm Mehedi. I build SaaS products that solve real problems. **
+
+Full-stack developer from Bangladesh, working with Laravel, Rust, Node.js and Vue.js.
+
+[View projects](https://mehedi.im/#projects) [Read the blog](https://mehedi.im/blog)
+
+## **About **
+
+I'm a full-stack developer and open source contributor. My core stack is PHP with Laravel, and I'm equally at home with Node.js and Vue.js on the front end, plus Rust where performance matters.
+
+Right now I'm building [Countdown Builder](https://countdownbuilder.com) and [OG Dynamic](https://ogdynamic.com).
+
+LaravelVue.jsNode.jsRustAWSPostgreSQLRedis
+
+## **Experience **
+
+Founder · Countdown Builder
+
+Sep 2025 – Present
+
+Senior Software Engineer · weDevs
+
+Jan 2023 – Aug 2025
+
+<details>
+
+<summary>Earlier experience (6)</summary>
+
+
+
+Software Engineer · weDevs
+
+Jul 2020 – Dec 2022
+
+Junior Software Engineer · weDevs
+
+Jun 2019 – Jun 2020
+
+Laravel Developer · Smart Software Ltd.
+
+Nov 2018 – May 2019
+
+Laravel Developer · Terrestrial IT Ltd
+
+Dec 2017 – Jun 2018
+
+Laravel Developer · bti- Building Technology &amp; Ideas Ltd. · Internship
+
+Jan 2017 – Jun 2017
+
+Web Developer · Cloud Technology
+
+Jun 2016 – Nov 2016
+
+</details>
+
+## **Featured projects **
+
+[<h3>**Countdown Builder **↗</h3>Live countdown timers for email campaigns and websites. Images come from a custom Rust service, compiled to WASM for the builder.LaravelRustWASMSaaS](https://countdownbuilder.com) [<h3>**OG Dynamic **↗</h3>Dynamic Open Graph images for ecommerce: branded pricing, product photos and reusable templates, rendered by a Rust service.LaravelRustE-commerce](https://ogdynamic.com) [<h3>**UmamiQR **↗</h3>Free AI-powered QR menus for restaurants. Manage menus in plain language; sub-600ms loads via Redis and CDN.LaravelVue.jsAIRedis](https://umamiqr.com)
+
+<details>
+
+<summary>More projects &amp; open source (6)</summary>
+
+
+
+<a href="https://codecanyon.net/item/md-notes-note-taking-apps/47341309"><h3>**MD Notes **↗</h3>Markdown note-taking desktop app for Windows with live preview, mermaid diagrams and offline SQLite storage.RustDesktop</a><a href="https://github.com/mehedimi/laravel-dynamodb"><h3>**Laravel DynamoDB **↗</h3>Eloquent-style DynamoDB for Laravel: CRUD, batch operations and pagination.LaravelAWSOpen source</a><a href="https://github.com/mehedimi/wp-query-builder"><h3>**WP Query Builder **↗</h3>A Composer package that makes WordPress database queries simple to write.PHPWordPressOpen source</a><a href="https://github.com/mehedimi/laravel-amp-mail"><h3>**Laravel AMP Mail **↗</h3>AMP email support for Laravel with graceful HTML/text fallback.LaravelEmailOpen source</a><a href="https://typing-v3.netlify.app"><h3>**Typing Master for Developers **↗</h3>Practice typing real code instead of random paragraphs.Vue.jsEducation</a><a href="https://wordpress.org/plugins/product-watcher"><h3>**Product Watcher **↗</h3>WordPress plugin showing real-time product viewer counts in WooCommerce.WordPressWooCommerce</a>
+
+</details>
+
+## **Latest writing **
+
+[Oct 23, 2026<h3>**Multi-Tenant Custom Domains, without paying for Cloudflare for SaaS**</h3>How Countdown Builder serves customer domains with their own TLS certs — Nginx stream SNI routing and Caddy on-demand TLS on a single server. · 5 min read](https://mehedi.im/blog/multi-tenant-custom-domains)
+
+[All posts →](https://mehedi.im/blog)
+
+## **Contact **
+
+Have a project in mind or just want to say hello? Reach out on any of these.
+
+[me@mehedi.im](mailto:me@mehedi.im) [GitHub](https://github.com/mehedimi) [LinkedIn](https://www.linkedin.com/in/mehedimi/) [Twitter](https://twitter.com/mehedimi) [Hire me on Fiverr](https://www.fiverr.com/mehedi_mi)
+
+```json
+{"@context":"https://schema.org","@graph":[{"@id":"https://mehedi.im/#website","@type":"WebSite","description":"Mehedi Hasan is a full-stack developer building SaaS products with Laravel, Rust, Node.js and Vue.js.","name":"Mehedi Hasan","url":"https://mehedi.im/","publisher":{"@id":"https://mehedi.im/#identity"}},{"@id":"https://mehedi.im/#webpage","@type":"WebPage","description":"Mehedi Hasan is a full-stack developer building SaaS products with Laravel, Rust, Node.js and Vue.js.","url":"https://mehedi.im/","about":{"@id":"https://mehedi.im/#identity"},"isPartOf":{"@id":"https://mehedi.im/#website"},"potentialAction":[{"@type":"ReadAction","target":["https://mehedi.im/"]}]},{"@id":"https://mehedi.im/#identity","@type":"Person","name":"Mehedi Hasan","url":"https://mehedi.im","sameAs":["https://github.com/mehedimi","https://twitter.com/mehedimi","https://www.linkedin.com/in/mehedimi/"]}]}
+```
+
+---
+
+- **Page:** Blog — Mehedi Hasan
+- **Source:** https://mehedi.im/blog
+- **Description:** Notes on building software and SaaS products — Laravel, Rust, Vue.js, and the lessons learned shipping products.
+
+# **Blog **
+
+Notes on building software and SaaS products.
+
+[Oct 23, 2026<h3>**Multi-Tenant Custom Domains, without paying for Cloudflare for SaaS**</h3>How Countdown Builder serves customer domains with their own TLS certs — Nginx stream SNI routing and Caddy on-demand TLS on a single server. · 5 min read](https://mehedi.im/blog/multi-tenant-custom-domains)
+
+```json
+{"@context":"https://schema.org","@graph":[{"@id":"https://mehedi.im/#website","@type":"WebSite","description":"Mehedi Hasan is a full-stack developer building SaaS products with Laravel, Rust, Node.js and Vue.js.","name":"Mehedi Hasan","url":"https://mehedi.im/","publisher":{"@id":"https://mehedi.im/#identity"}},{"@id":"https://mehedi.im/blog#webpage","@type":"WebPage","description":"Notes on building software and SaaS products — Laravel, Rust, Vue.js, and the lessons learned shipping products.","name":"Blog","url":"https://mehedi.im/blog","isPartOf":{"@id":"https://mehedi.im/#website"},"potentialAction":[{"@type":"ReadAction","target":["https://mehedi.im/blog"]}]},{"@id":"https://mehedi.im/#identity","@type":"Person","name":"Mehedi Hasan","url":"https://mehedi.im","sameAs":["https://github.com/mehedimi","https://twitter.com/mehedimi","https://www.linkedin.com/in/mehedimi/"]}]}
+```
+
+---
+
+- **Page:** Multi-Tenant Custom Domains, without paying for Cloudflare for SaaS
+- **Source:** https://mehedi.im/blog/multi-tenant-custom-domains
+- **Description:** How Countdown Builder serves customer domains with their own TLS certs — Nginx stream SNI routing and Caddy on-demand TLS on a single server.
+
+![Multi-Tenant Custom Domains](https://mehedi.im/images/blog/banner-custom-domains-light.png)
+
+I run [Countdown Builder](https://countdownbuilder.com), a SaaS that serves live countdown timer images for emails. Customers wanted `timer.theirbrand.com` instead of our domain, which meant issuing and renewing TLS certs for domains I don't know in advance.
+
+Cloudflare for SaaS solves this, but I wanted to keep it on the single server I already run. So I built it with Nginx and Caddy. This is the loop I went through: what I tried, what broke, and what the final setup looks like.
+
+## The final architecture
+
+```mermaid
+flowchart LR
+    Client[Client] -->|HTTPS :443| N["Nginx stream (L4)"]
+    N -->|"SNI: known SaaS domain"| App["Nginx app"]
+    N -->|"SNI: custom domain"| Caddy["Caddy on-demand TLS"]
+```
+
+- **Nginx stream (Layer 4)** listens on 443. It never decrypts anything. It reads the SNI from the TLS handshake and routes the raw connection.
+- **Caddy (Layer 7)** handles unknown customer domains. It terminates TLS, gets Let's Encrypt certificates on the fly, and proxies to the backend.
+
+## Attempt 1: Plain Nginx
+
+**Try:** one `server` block with `server_name _` and a wildcard cert.
+**Result:** a wildcard cert only covers *my* domain. Customer domains throw certificate warnings, and Gmail's image proxy refuses to fetch the timer.
+**Learned:** Nginx needs a cert *before* it knows which site you wanted. Dynamic domains need something that can get certs at handshake time.
+
+## Attempt 2: Caddy on-demand TLS, alone
+
+**Try:** Caddy on 443 with `on_demand` and an `ask` endpoint.
+**Result:** it works, but now Caddy fronts my main app too, and I didn't want to migrate a working Nginx setup.
+**Learned:** I wanted the main app untouched, with only unknown domains going to Caddy.
+
+## Attempt 3: Nginx `stream` as an SNI router
+
+Nginx's `stream` module can read the SNI from the TLS ClientHello without decrypting anything:
+
+```nginx
+stream {
+    map $ssl_preread_server_name $https_backend {
+        app.example.com  127.0.0.1:8081;   # main app (Nginx http block)
+        example.com      127.0.0.1:8081;
+        default          127.0.0.1:8443;   # everything else -> Caddy
+    }
+
+    server {
+        listen 443;
+        ssl_preread on;
+        proxy_pass $https_backend;
+    }
+}
+```
+
+**Result:** HTTPS worked. Known domains hit the app, unknown ones hit Caddy and got certs on demand. I thought I was done.
+
+## Port 80 routing doesn't work in `stream`
+
+My first draft routed port 80 with `$http_host` inside a `stream` map. That variable doesn't exist there, because stream is Layer 4 and never parses HTTP. You get a config error or an empty variable, depending on version.
+
+**Fix:** keep port 80 in a normal `http` block, where Host-based routing works:
+
+```nginx
+http {
+    server {
+        listen 80 default_server;
+        server_name app.example.com example.com;
+        location / { proxy_pass http://127.0.0.1:5000; }
+    }
+
+    server {
+        listen 80;
+        server_name _;
+        location / {
+            proxy_pass http://127.0.0.1:8082;   # Caddy HTTP (ACME + redirect)
+            proxy_set_header Host $host;
+        }
+    }
+}
+```
+
+## The gatekeeper endpoint
+
+Without an `ask` endpoint, anyone can point a domain at your IP and make Caddy burn through your Let's Encrypt rate limits. Caddy calls your backend before issuing:
+
+```http
+GET /internal/domain-check?domain=clientdomain.com
+```
+
+- **200 OK:** your database recognizes the domain. Caddy gets the cert, caches it, and serves the request.
+- **Anything else:** Caddy aborts the handshake.
+
+Keep it to one indexed DB lookup, since it sits on the handshake path.
+
+## Gotcha: ACME challenges and scanner noise
+
+HTTP-01 needs port 80 to reach Caddy for the customer domain, which the `http` block from Bug 1 handles. If issuance fails, check first that the customer's DNS actually points at your server.
+
+You may also see `tls-alpn challenge ... no information found to solve challenge for identifier:` in Caddy's logs every few days. Look at the `server_name` field: when it's empty, something connected with the ACME ALPN protocol but sent no hostname. Real validations carry the domain, so this is almost certainly a scanner, and Caddy is correctly refusing it.
+
+## How I verified it
+
+A page that loads proves nothing. I checked each path separately, from a machine other than the server:
+
+```bash
+curl -sI https://timer.customer.com/        # customer-domain path
+curl -sI https://app.example.com/           # main-app path
+```
+
+Both should answer over HTTPS with no certificate warnings. To inspect the certificate Caddy actually issued:
+
+```bash
+echo | openssl s_client -connect timer.customer.com:443 -servername timer.customer.com 2>/dev/null | openssl x509 -noout -issuer -dates
+```
+
+That should show Let's Encrypt as the issuer, with dates that make sense.
+
+Last, issue a certificate for a domain that has never touched the server and read Caddy's log:
+
+```bash
+sudo journalctl -u caddy --since "5 min ago" --no-pager | grep -iE 'obtaining|obtained|error'
+```
+
+You want `obtaining new certificate` followed by `certificate obtained successfully`. (If journalctl prints "No entries" without `sudo`, that's a permissions issue, not an empty log.)
+
+## What I'd tell past me
+
+1. Prototype with Let's Encrypt **staging** to avoid rate limits while debugging.
+2. Test with `curl --resolve` before touching real DNS.
+3. Add a per-domain issuance cap in your `ask` endpoint.
+

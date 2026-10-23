@@ -1,0 +1,17 @@
+# Mehedi Hasan
+
+> Mehedi Hasan is a full-stack developer building SaaS products with Laravel, Rust, Node.js and Vue.js.
+
+Canonical Origin: https://mehedi.im/
+
+## LLM Resources
+
+- [Full Content](https://mehedi.im/llms-full.txt): Complete page content in markdown format.
+- [sitemap.xml](https://mehedi.im/sitemap.xml): XML sitemap for search engines and crawlers.
+- [robots.txt](https://mehedi.im/robots.txt): Crawler rules and permissions.
+
+## Pages
+
+- [/](https://mehedi.im/index.md)
+- [/blog](https://mehedi.im/blog.md)
+- [/blog/multi-tenant-custom-domains](https://mehedi.im/blog/multi-tenant-custom-domains.md)
