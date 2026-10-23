@@ -1,4 +1,6 @@
 <script setup lang="ts">
+defineProps<{ hidden?: boolean }>();
+
 const route = useRoute();
 const isPost = computed(
   () => route.path.startsWith("/blog/") && route.path !== "/blog",
@@ -28,7 +30,8 @@ watch(isPost, () => update());
   <div
     v-if="isPost"
     aria-hidden="true"
-    class="fixed top-[60px] left-0 z-25 h-0.5 w-full origin-left bg-accent"
+    class="fixed left-0 z-25 h-0.5 w-full origin-left bg-accent transition-[top] duration-300 ease-out"
+    :class="hidden ? 'top-0' : 'top-[60px]'"
     :style="{ transform: `scaleX(${progress})` }"
   />
 </template>

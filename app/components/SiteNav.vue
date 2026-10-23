@@ -1,11 +1,16 @@
 <script setup lang="ts">
+defineProps<{ hidden?: boolean }>();
+
 const route = useRoute();
 
 const onBlog = computed(() => route.path.startsWith("/blog"));
 </script>
 
 <template>
-  <header class="sticky top-0 z-20 border-b border-line bg-bg">
+  <header
+    class="sticky top-0 z-20 border-b border-line bg-bg transition-transform duration-300 ease-out"
+    :class="hidden ? '-translate-y-full' : 'translate-y-0'"
+  >
     <div
       class="mx-auto flex h-[60px] max-w-[720px] items-center justify-between px-[22px]"
     >
