@@ -93,6 +93,13 @@ const stack = [
 <template>
   <div class="mx-auto max-w-[720px] px-[22px] pt-14 pb-10">
     <!-- Intro -->
+    <img
+      src="/images/mehedi.jpg"
+      alt="Portrait of Mehedi Hasan"
+      width="300"
+      height="300"
+      class="mb-6 h-[88px] w-[88px] rounded-full border border-line object-cover"
+    />
     <h1
       class="mb-3.5 text-[clamp(2rem,6vw,2.8rem)] leading-[1.15] font-bold tracking-[-0.03em]"
     >
