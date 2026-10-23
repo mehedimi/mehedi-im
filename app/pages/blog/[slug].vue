@@ -21,6 +21,9 @@ useSeoMeta({
   ogDescription: () => post.value!.description,
   ogType: "article",
   ogImage: () => post.value!.image,
+  ogImageAlt: () => post.value!.title,
+  twitterCard: () => (post.value!.image ? "summary_large_image" : "summary"),
+  twitterImage: () => post.value!.image,
   articlePublishedTime: () => new Date(post.value!.date).toISOString(),
 });
 

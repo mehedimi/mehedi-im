@@ -49,6 +49,7 @@ export default defineNuxtConfig({
           href: "/favicon-16x16.png",
         },
         { rel: "shortcut icon", href: "/favicon.ico" },
+        { rel: "manifest", href: "/site.webmanifest" },
         {
           rel: "apple-touch-icon",
           sizes: "180x180",
