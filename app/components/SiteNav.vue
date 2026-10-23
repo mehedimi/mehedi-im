@@ -1,51 +1,44 @@
 <script setup lang="ts">
 const route = useRoute();
+
+const onBlog = computed(() => route.path.startsWith("/blog"));
 </script>
 
 <template>
-  <header
-    class="sticky top-0 z-50 border-b border-stone-200/60 bg-stone-50/80 backdrop-blur-md"
-  >
-    <nav class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+  <header class="sticky top-0 z-20 border-b border-line bg-bg">
+    <div
+      class="mx-auto flex h-[60px] max-w-[720px] items-center justify-between px-[22px]"
+    >
       <NuxtLink
         to="/"
-        class="font-serif text-lg font-bold tracking-tight text-stone-900 transition-colors hover:text-amber-600"
+        class="font-[650] tracking-[-0.01em] text-text no-underline"
       >
-        mehedi<span class="text-amber-600">.im</span>
+        Mehedi Hasan
       </NuxtLink>
 
-      <div class="flex items-center gap-2 sm:gap-6">
+      <nav class="flex items-center gap-4 text-[0.95rem] sm:gap-5">
         <NuxtLink
-          to="/"
-          class="rounded-full px-3 py-2 text-sm font-medium transition-colors sm:px-4"
-          :class="
-            route.path === '/'
-              ? 'bg-stone-200/70 text-stone-900'
-              : 'text-stone-500 hover:text-stone-900'
-          "
+          to="/#projects"
+          class="transition-colors duration-150 hover:text-text"
+          :class="!onBlog ? 'text-text' : 'text-muted'"
         >
-          Home
+          Work
         </NuxtLink>
         <NuxtLink
           to="/blog"
-          class="rounded-full px-3 py-2 text-sm font-medium transition-colors sm:px-4"
-          :class="
-            route.path.startsWith('/blog')
-              ? 'bg-stone-200/70 text-stone-900'
-              : 'text-stone-500 hover:text-stone-900'
-          "
+          class="transition-colors duration-150 hover:text-text"
+          :class="onBlog ? 'text-text' : 'text-muted'"
         >
           Blog
         </NuxtLink>
         <a
-          href="https://www.fiverr.com/mehedi_mi"
-          target="_blank"
-          rel="noopener"
-          class="rounded-full border-2 border-green-300 px-4 py-1.5 text-sm font-medium text-green-700 transition-all duration-300 hover:border-green-400 hover:bg-green-50"
+          href="mailto:me@mehedi.im"
+          class="text-muted transition-colors duration-150 hover:text-text"
         >
-          Hire Me
+          Contact
         </a>
-      </div>
-    </nav>
+        <ThemeToggle />
+      </nav>
+    </div>
   </header>
 </template>

@@ -16,7 +16,7 @@ export default defineNuxtConfig({
     url: "https://mehedi.im",
     name: "Mehedi Hasan",
     description:
-      "Mehedi Hasan is a full-stack developer specializing in Laravel, Node.js, Vue.js, and scalable SaaS solutions. Explore his projects, writing, and expertise.",
+      "Mehedi Hasan is a full-stack developer building SaaS products with Laravel, Rust, Node.js and Vue.js.",
   },
 
   schemaOrg: {
@@ -35,17 +35,11 @@ export default defineNuxtConfig({
   app: {
     head: {
       htmlAttrs: { lang: "en" },
-      link: [
-        { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" },
-        { rel: "preconnect", href: "https://fonts.googleapis.com" },
+      link: [{ rel: "icon", type: "image/svg+xml", href: "/favicon.svg" }],
+      script: [
         {
-          rel: "preconnect",
-          href: "https://fonts.gstatic.com",
-          crossorigin: "",
-        },
-        {
-          rel: "stylesheet",
-          href: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap",
+          // Set the theme before first paint — no flash
+          innerHTML: `(function(){try{var t=localStorage.getItem("theme");if(t!=="light"&&t!=="dark")t=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";document.documentElement.dataset.theme=t}catch(e){}})();`,
         },
       ],
     },
@@ -57,6 +51,7 @@ export default defineNuxtConfig({
         highlight: {
           theme: {
             default: "github-light",
+            dark: "github-dark",
           },
           langs: [
             "php",

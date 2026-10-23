@@ -2,10 +2,10 @@
 useSeoMeta({
   title: "Blog",
   description:
-    "Writing about Laravel, Vue.js, Rust, SaaS development, and the lessons learned building products.",
-  ogTitle: "Blog | Mehedi Hasan",
+    "Notes on building software and SaaS products — Laravel, Rust, Vue.js, and the lessons learned shipping products.",
+  ogTitle: "Blog — Mehedi Hasan",
   ogDescription:
-    "Writing about Laravel, Vue.js, Rust, SaaS development, and the lessons learned building products.",
+    "Notes on building software and SaaS products — Laravel, Rust, Vue.js, and the lessons learned shipping products.",
 });
 
 const { data: posts } = await useAsyncData("blog-posts", () =>
@@ -14,34 +14,19 @@ const { data: posts } = await useAsyncData("blog-posts", () =>
 </script>
 
 <template>
-  <div>
-    <section class="bg-stone-100 px-6 py-24">
-      <div class="mx-auto max-w-4xl">
-        <span
-          class="text-sm font-medium tracking-wider text-amber-600 uppercase"
-          >Blog</span
-        >
-        <h1
-          class="mt-2 text-4xl font-bold tracking-tight text-stone-900 md:text-5xl"
-        >
-          Writing about building software
-        </h1>
-        <p class="mt-4 max-w-2xl text-lg leading-relaxed text-stone-500">
-          Notes on Laravel, Vue.js, Rust, and the ups and downs of building SaaS
-          products.
-        </p>
-      </div>
-    </section>
+  <div class="mx-auto max-w-[720px] px-[22px] pt-14 pb-10">
+    <h1
+      class="text-[clamp(2rem,6vw,2.8rem)] leading-[1.15] font-bold tracking-[-0.03em]"
+    >
+      Blog
+    </h1>
+    <p class="mt-3.5 mb-9 max-w-[56ch] text-[1.15rem] text-muted">
+      Notes on building software and SaaS products.
+    </p>
 
-    <section class="px-6 py-20">
-      <div class="mx-auto max-w-4xl">
-        <div v-if="posts?.length" class="grid gap-6 sm:grid-cols-2">
-          <BlogCard v-for="post in posts" :key="post.path" :post="post" />
-        </div>
-        <p v-else class="text-center text-stone-400">
-          No posts yet — check back soon.
-        </p>
-      </div>
-    </section>
+    <div v-if="posts?.length" class="border-b border-line">
+      <BlogCard v-for="post in posts" :key="post.path" :post="post" />
+    </div>
+    <p v-else class="text-muted">No posts yet — check back soon.</p>
   </div>
 </template>
