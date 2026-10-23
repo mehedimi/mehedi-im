@@ -35,6 +35,7 @@
 }
 
 @theme {
+  --font-serif: "Lora", Georgia, "Times New Roman", serif;
   --font-sans:
     "Figtree", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif;
@@ -64,7 +65,7 @@
 
 /* Long-form reading view (markdown body) */
 .prose {
-  font-family: "Lora", Georgia, "Times New Roman", serif;
+  font-family: var(--font-serif);
   font-size: 1.125rem;
   line-height: 1.75;
 }
@@ -77,8 +78,7 @@
   margin: 0 0 1.4em;
 }
 
-/* Headings and tables stay sans against the serif body */
-.prose :is(h2, h3, h4),
+/* Tables stay sans against the serif body */
 .prose table {
   font-family: var(--font-sans);
 }
