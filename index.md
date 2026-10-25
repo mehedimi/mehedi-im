@@ -83,7 +83,7 @@ Jun 2016 – Nov 2016
 
 ## **Latest writing **
 
-[Oct 24, 2026<h3>**I moved Nginx's internal hops to Unix sockets**</h3>My stream block was opening TCP connections to Nginx itself and to Caddy, on loopback ports anyone on the box could reach. Here's the move to Unix sockets, the permissions that make it worthwhile, and what I left alone. · 7 min read](https://mehedi.im/blog/nginx-stream-unix-sockets) [Oct 23, 2026<h3>**Multi-Tenant Custom Domains, without paying for Cloudflare for SaaS**</h3>How Countdown Builder serves customer domains with their own TLS certs — Nginx stream SNI routing and Caddy on-demand TLS on a single server. · 5 min read](https://mehedi.im/blog/multi-tenant-custom-domains)
+[Oct 26, 2026<h3>**I moved Nginx's internal hops to Unix sockets**</h3>My stream block was opening TCP connections to Nginx itself and to Caddy, even though neither hop ever leaves the machine. Here's the move to Unix sockets, the network overhead it drops, and what I left alone. · 7 min read](https://mehedi.im/blog/nginx-stream-unix-sockets) [Oct 23, 2026<h3>**Multi-Tenant Custom Domains, without paying for Cloudflare for SaaS**</h3>How Countdown Builder serves customer domains with their own TLS certs — Nginx stream SNI routing and Caddy on-demand TLS on a single server. · 5 min read](https://mehedi.im/blog/multi-tenant-custom-domains)
 
 [All posts →](https://mehedi.im/blog)
 

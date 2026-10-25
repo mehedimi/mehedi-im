@@ -1,6 +1,6 @@
 ---
 title: "I moved Nginx's internal hops to Unix sockets"
-description: "My stream block was opening TCP connections to Nginx itself and to Caddy, on loopback ports anyone on the box could reach. Here's the move to Unix sockets, the permissions that make it worthwhile, and what I left alone."
+description: "My stream block was opening TCP connections to Nginx itself and to Caddy, even though neither hop ever leaves the machine. Here's the move to Unix sockets, the network overhead it drops, and what I left alone."
 canonical_url: "https://mehedi.im/blog/nginx-stream-unix-sockets"
 ---
 
@@ -12,7 +12,7 @@ In [Multi-Tenant Custom Domains](https://mehedi.im/blog/multi-tenant-custom-doma
 
 It worked fine. It also bugged me, because both of those hops are just processes on the same machine talking to each other over TCP. One of them is Nginx connecting to itself.
 
-So I swapped both for Unix sockets. It's a small change, but the interesting part isn't speed. It's who gets to connect.
+So I swapped both for Unix sockets. The main reason is simple: these hops never leave the machine, so they shouldn't be paying for the network stack at all.
 
 ```mermaid
 flowchart LR
@@ -25,9 +25,11 @@ flowchart LR
 
 ## Why bother
 
-A loopback port is open to every process on the machine. If something else on the box gets compromised, it can talk to `:8081` or `:8443` just like Nginx does. That's not a big deal while those listeners are plain TLS endpoints, but I knew I'd want to add PROXY protocol next, and a listener that trusts a header from whoever connects is a bad idea. (That's the next post.)
+Both hops are processes on the same machine talking to each other. Over TCP that means a full handshake, loopback addressing, ephemeral ports, and `TIME_WAIT` cleanup on every connection — the kernel running its whole networking routine for a conversation that never leaves the box.
 
-A Unix socket is a file. To connect you need permission on it, and on the directory it lives in. So the filesystem becomes your access control, with no firewall rule or extra config. You also drop two arbitrary port numbers that someone, probably you in six months, will have to wonder about.
+A Unix socket skips all of it. The kernel moves bytes directly between the two processes, and there's no network stack in the path. You also drop two arbitrary port numbers that someone, probably you in six months, will have to wonder about.
+
+The socket being a file has a side effect I like too: to connect, you need permission on the socket and on the directory it lives in. Everything here is on one machine that I control, so that's not what drove the change — but it costs nothing.
 
 ## One directory for all of them
 
@@ -115,11 +117,11 @@ I'd do this one hop at a time the first time. Move the Nginx app hop, check the 
 
 The app itself still listens on plain HTTP over loopback. `proxy_pass http://127.0.0.1:...` in Nginx and `reverse_proxy` in Caddy are exactly as they were.
 
-Sockets make sense when you control both ends and want the filesystem to decide who's allowed in. For the Nginx-to-Nginx and Nginx-to-Caddy hops, that's true. The app is a separate process with its own lifecycle, and it's also what `curl` and health checks talk to. Keeping that boring is worth more to me than a slightly shorter path.
+Sockets make sense when you control both ends and the connection never needs to leave the machine. For the Nginx-to-Nginx and Nginx-to-Caddy hops, that's true. The app is a separate process with its own lifecycle, and it's also what `curl` and health checks talk to. Keeping that boring is worth more to me than a slightly shorter path.
 
-## What you don't get
+## Bookkeeping, not bandwidth
 
-Don't expect it to be faster in any way you'd notice. You skip the TCP handshake and the kernel's bookkeeping on these hops. There are no ports involved, so there's no `TIME_WAIT` pile on the closing side after a burst of connections. But it's bookkeeping, not bandwidth. I'd measure before claiming anything beyond that. If you want to see the `TIME_WAIT` difference yourself, count them before and after:
+To be clear about what you're dropping: it's bookkeeping, not bandwidth. You skip the TCP handshake and the kernel's per-connection networking work on these hops. There are no ports involved, so there's no `TIME_WAIT` pile on the closing side after a burst of connections. That's exactly the overhead I wanted gone on hops that don't need a network — I'm just not going to claim you'll feel it in a benchmark. If you want to see the `TIME_WAIT` difference yourself, count them before and after:
 
 ```bash
 ss -tan state time-wait | grep -E ':8081|:8443' | wc -l
