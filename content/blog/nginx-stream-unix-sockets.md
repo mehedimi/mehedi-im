@@ -1,7 +1,7 @@
 ---
 title: I moved Nginx's internal hops to Unix sockets
 description: My stream block was opening TCP connections to Nginx itself and to Caddy, even though neither hop ever leaves the machine. Here's the move to Unix sockets, the network overhead it drops, and what I left alone.
-date: 2026-10-24
+date: 2026-10-26
 tags:
   - Nginx
   - Caddy
