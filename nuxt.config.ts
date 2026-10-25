@@ -61,6 +61,14 @@ export default defineNuxtConfig({
           // Set the theme before first paint — no flash
           innerHTML: `(function(){try{var t=localStorage.getItem("theme");if(t!=="light"&&t!=="dark")t=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";document.documentElement.dataset.theme=t}catch(e){}})();`,
         },
+        // Google Analytics (gtag.js)
+        {
+          src: "https://www.googletagmanager.com/gtag/js?id=G-K3DR91J839",
+          async: true,
+        },
+        {
+          innerHTML: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-K3DR91J839');`,
+        },
       ],
     },
   },

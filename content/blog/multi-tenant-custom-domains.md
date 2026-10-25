@@ -136,3 +136,8 @@ You want `obtaining new certificate` followed by `certificate obtained successfu
 1. Prototype with Let's Encrypt **staging** to avoid rate limits while debugging.
 2. Test with `curl --resolve` before touching real DNS.
 3. Add a per-domain issuance cap in your `ask` endpoint.
+
+---
+
+**Read next:** [I moved Nginx's internal hops to Unix sockets](/blog/nginx-stream-unix-sockets) — the stream block now hands off to the HTTP block and to Caddy over sockets, while the app keeps its plain HTTP listener.
+

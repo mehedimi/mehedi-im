@@ -45,5 +45,7 @@ useHead({
     </main>
 
     <SiteFooter />
+
+    <CookieBanner />
   </div>
 </template>
