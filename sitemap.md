@@ -8,3 +8,4 @@ All pages in Markdown format.
 ## blog
 - [Blog — Mehedi Hasan](https://mehedi.im/blog.md)
 - [Multi-Tenant Custom Domains, without paying for Cloudflare for SaaS](https://mehedi.im/blog/multi-tenant-custom-domains.md)
+- [I moved Nginx's internal hops to Unix sockets](https://mehedi.im/blog/nginx-stream-unix-sockets.md)

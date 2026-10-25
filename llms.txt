@@ -15,3 +15,4 @@ Canonical Origin: https://mehedi.im/
 - [/](https://mehedi.im/index.md)
 - [/blog](https://mehedi.im/blog.md)
 - [/blog/multi-tenant-custom-domains](https://mehedi.im/blog/multi-tenant-custom-domains.md)
+- [/blog/nginx-stream-unix-sockets](https://mehedi.im/blog/nginx-stream-unix-sockets.md)
