@@ -14,16 +14,28 @@ if (!post.value) {
   });
 }
 
+const postMeta = (): string => {
+  const minutes = readingTime(post.value!.body);
+  return minutes
+    ? `${formatDate(post.value!.date)} · ${minutes} min read`
+    : formatDate(post.value!.date);
+};
+
+const { ogImage, twitterImage } = usePostOgImage(
+  () => post.value!.title,
+  postMeta,
+);
+
 useSeoMeta({
   title: () => post.value!.title,
   description: () => post.value!.description,
   ogTitle: () => post.value!.title,
   ogDescription: () => post.value!.description,
   ogType: "article",
-  ogImage: () => post.value!.image,
+  ogImage,
   ogImageAlt: () => post.value!.title,
-  twitterCard: () => (post.value!.image ? "summary_large_image" : "summary"),
-  twitterImage: () => post.value!.image,
+  twitterCard: "summary_large_image",
+  twitterImage,
   articlePublishedTime: () => new Date(post.value!.date).toISOString(),
 });
 

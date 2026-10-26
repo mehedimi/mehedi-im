@@ -1,4 +1,10 @@
 <script setup lang="ts">
+const { ogImage, twitterImage } = useOgImage(
+  "Blog",
+  "Notes on building software and SaaS products",
+  "Laravel, Rust, Vue.js, and the lessons learned shipping products.",
+);
+
 useSeoMeta({
   title: "Blog",
   description:
@@ -6,6 +12,10 @@ useSeoMeta({
   ogTitle: "Blog — Mehedi Hasan",
   ogDescription:
     "Notes on building software and SaaS products — Laravel, Rust, Vue.js, and the lessons learned shipping products.",
+  ogImage,
+  ogImageAlt: "Blog — Mehedi Hasan",
+  twitterCard: "summary_large_image",
+  twitterImage,
 });
 
 const { data: posts } = await useAsyncData("blog-posts", () =>

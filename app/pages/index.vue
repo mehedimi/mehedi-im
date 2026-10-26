@@ -5,6 +5,11 @@ useSeoMeta({
   ogTitle: "Mehedi Hasan — Full-Stack Developer & SaaS Builder",
   ogDescription:
     "Mehedi Hasan is a full-stack developer building SaaS products with Laravel, Rust, Node.js and Vue.js.",
+  ogImage: "https://cdn.ogdynamic.com/c/01m5wjkzftftacgbn7e1k8xht7",
+  ogImageAlt: "Mehedi Hasan — Full-Stack Developer & SaaS Builder",
+  twitterCard: "summary_large_image",
+  twitterImage:
+    "https://cdn.ogdynamic.com/c/01m5wjkzftftacgbn7e1k8xht7?config[intent]=twitter",
 });
 
 const { data: latestPosts } = await useAsyncData("latest-posts", () =>
