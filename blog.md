@@ -4,7 +4,10 @@ description: "Notes on building software and SaaS products — Laravel, Rust, Vu
 canonical_url: "https://mehedi.im/blog"
 meta:
   "og:description": "Notes on building software and SaaS products — Laravel, Rust, Vue.js, and the lessons learned shipping products."
+  "og:image": "https://cdn.ogdynamic.com/c/01m5wkjfgsrpx2nnszthgr80bw?label=Blog&title=Notes%20on%20building%20software%20and%20SaaS%20products&subtitle=Laravel%2C%20Rust%2C%20Vue.js%2C%20and%20the%20lessons%20learned%20shipping%20products."
+  "og:image:alt": "Blog — Mehedi Hasan"
   "og:title": "Blog — Mehedi Hasan"
+  "twitter:image": "https://cdn.ogdynamic.com/c/01m5wkjfgsrpx2nnszthgr80bw?label=Blog&title=Notes%20on%20building%20software%20and%20SaaS%20products&subtitle=Laravel%2C%20Rust%2C%20Vue.js%2C%20and%20the%20lessons%20learned%20shipping%20products.&config[intent]=twitter"
 ---
 
 > Index of every page on this site: [llms.txt](https://mehedi.im/llms.txt)

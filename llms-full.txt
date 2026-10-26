@@ -14,6 +14,13 @@ Canonical Origin: https://mehedi.im/
 - **Source:** https://mehedi.im/
 - **Description:** Mehedi Hasan is a full-stack developer building SaaS products with Laravel, Rust, Node.js and Vue.js.
 
+```yaml
+meta:
+  og:image: https://cdn.ogdynamic.com/c/01m5wjkzftftacgbn7e1k8xht7
+  og:image:alt: Mehedi Hasan — Full-Stack Developer & SaaS Builder
+  twitter:image: https://cdn.ogdynamic.com/c/01m5wjkzftftacgbn7e1k8xht7?config[intent]=twitter
+```
+
 ![Portrait of Mehedi Hasan](https://mehedi.im/images/mehedi.jpg)
 
 # **Hi, I'm Mehedi. I build SaaS products that solve real problems. **
@@ -107,6 +114,13 @@ Have a project in mind or just want to say hello? Reach out on any of these.
 - **Page:** Blog — Mehedi Hasan
 - **Source:** https://mehedi.im/blog
 - **Description:** Notes on building software and SaaS products — Laravel, Rust, Vue.js, and the lessons learned shipping products.
+
+```yaml
+meta:
+  og:image: https://cdn.ogdynamic.com/c/01m5wkjfgsrpx2nnszthgr80bw?label=Blog&title=Notes%20on%20building%20software%20and%20SaaS%20products&subtitle=Laravel%2C%20Rust%2C%20Vue.js%2C%20and%20the%20lessons%20learned%20shipping%20products.
+  og:image:alt: Blog — Mehedi Hasan
+  twitter:image: https://cdn.ogdynamic.com/c/01m5wkjfgsrpx2nnszthgr80bw?label=Blog&title=Notes%20on%20building%20software%20and%20SaaS%20products&subtitle=Laravel%2C%20Rust%2C%20Vue.js%2C%20and%20the%20lessons%20learned%20shipping%20products.&config[intent]=twitter
+```
 
 # **Blog **
 

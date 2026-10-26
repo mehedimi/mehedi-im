@@ -4,7 +4,10 @@ description: "Mehedi Hasan is a full-stack developer building SaaS products with
 canonical_url: "https://mehedi.im/"
 meta:
   "og:description": "Mehedi Hasan is a full-stack developer building SaaS products with Laravel, Rust, Node.js and Vue.js."
+  "og:image": "https://cdn.ogdynamic.com/c/01m5wjkzftftacgbn7e1k8xht7"
+  "og:image:alt": "Mehedi Hasan — Full-Stack Developer & SaaS Builder"
   "og:title": "Mehedi Hasan — Full-Stack Developer & SaaS Builder"
+  "twitter:image": "https://cdn.ogdynamic.com/c/01m5wjkzftftacgbn7e1k8xht7?config[intent]=twitter"
 ---
 
 > Index of every page on this site: [llms.txt](https://mehedi.im/llms.txt)
