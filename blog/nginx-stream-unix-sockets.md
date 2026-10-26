@@ -160,6 +160,10 @@ Before the switch, the `http` block saw `127.0.0.1` as the client. Now over a so
 
 Fixing that takes PROXY protocol, and it has a couple of traps. That's the next post.
 
+---
+
+**Read next:** [Real client IPs through the stream hop, with PROXY protocol](https://mehedi.im/blog/nginx-proxy-protocol) — the fix for that one-visitor analytics, and the traps along the way.
+
 ## Sitemap
 
 See the full [sitemap](https://mehedi.im/sitemap.md) for all pages.
