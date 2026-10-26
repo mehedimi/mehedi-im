@@ -1,7 +1,7 @@
 ---
 title: I moved Nginx's internal hops to Unix sockets
 description: My stream block was opening TCP connections to Nginx itself and to Caddy, even though neither hop ever leaves the machine. Here's the move to Unix sockets, the network overhead it drops, and what I left alone.
-date: 2026-10-26
+date: 2026-10-25
 tags:
   - Nginx
   - Caddy
@@ -163,3 +163,7 @@ sudo curl --unix-socket /run/app-sockets/nginx-app.sock -sI https://app.example.
 Before the switch, the `http` block saw `127.0.0.1` as the client. Now over a socket it sees no useful address at all. And Caddy still only sees Nginx, not the real visitor. The `stream` hop forwards raw TCP, so nothing downstream knows who connected. My analytics for customer domains quietly turned into one visitor.
 
 Fixing that takes PROXY protocol, and it has a couple of traps. That's the next post.
+
+---
+
+**Read next:** [Real client IPs through the stream hop, with PROXY protocol](/blog/nginx-proxy-protocol) — the fix for that one-visitor analytics, and the traps along the way.
